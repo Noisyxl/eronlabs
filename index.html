@@ -266,7 +266,8 @@ section{position:relative}
 .splan .p b{font-family:var(--serif);font-weight:400;font-size:40px;line-height:1;display:block}
 .splan .p s{font-size:13px;color:var(--mute-d)}
 .pay{font-size:13.5px;color:var(--mute-d);line-height:1.6}
-.codebox{border:1px dashed var(--mute-d);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.codebox{color:inherit;transition:border-color .2s;border:1px dashed var(--mute-d);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.codebox:hover{border-color:var(--paper)}
 .codebox b{font-family:var(--mono);font-size:18px;letter-spacing:.1em}
 
 /* guarantee */
@@ -600,16 +601,16 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
           <div><span>Lifetime updates &amp; new lessons</span><span>free</span></div>
           <div class="tot"><span>Total value</span><span><s>$198</s> → $49</span></div>
         </div>
-        <a class="btn btn-solid" href="#checkout-full">Get the Full Stack — $49 →</a>
+        <a class="btn btn-solid" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04" rel="noopener">Get the Full Stack — $49 →</a>
         <span style="font-size:13.5px;color:var(--mute);text-align:center">One-time payment · instant access · 30-day refund</span>
       </div>
       <div class="side-plans rv">
         <span class="eyebrow">Or start with one pack</span>
-        <a class="splan" href="#checkout-p1"><div><b>Pack 01 · How AI sees words</b><p>5 lessons + notebooks + prompts</p></div><div class="p"><b>$19</b><s>$39</s></div></a>
-        <a class="splan" href="#checkout-p2"><div><b>Pack 02 · How ChatGPT thinks</b><p>6 lessons + notebooks + prompts</p></div><div class="p"><b>$24</b><s>$49</s></div></a>
-        <a class="splan" href="#checkout-p3"><div><b>Pack 03 · How AI is built &amp; read</b><p>5 lessons + notebooks + prompts</p></div><div class="p"><b>$19</b><s>$39</s></div></a>
-        <div class="codebox"><span style="color:var(--mute-d);font-size:14px">Follow me on X? Extra −10% at checkout</span><b>ERON10</b></div>
-        <p class="pay">Card, Apple Pay, Google Pay or crypto (USDC/USDT). Three packs separately cost $62 and don’t include the $17K playbook. The Full Stack is $49.</p>
+        <a class="splan" href="https://buy.stripe.com/5kQ3coh1h4AyfqgaX67AI05" rel="noopener"><div><b>Pack 01 · How AI sees words</b><p>5 lessons + notebooks + prompts</p></div><div class="p"><b>$19</b><s>$39</s></div></a>
+        <a class="splan" href="https://buy.stripe.com/6oU00c4ev5ECce4ghq7AI06" rel="noopener"><div><b>Pack 02 · How ChatGPT thinks</b><p>6 lessons + notebooks + prompts</p></div><div class="p"><b>$24</b><s>$49</s></div></a>
+        <a class="splan" href="https://buy.stripe.com/aFabIU7qH1omba03uE7AI07" rel="noopener"><div><b>Pack 03 · How AI is built &amp; read</b><p>5 lessons + notebooks + prompts</p></div><div class="p"><b>$19</b><s>$39</s></div></a>
+        <a class="codebox" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04?prefilled_promo_code=ERON10" rel="noopener" style="text-decoration:none"><span style="color:var(--mute-d);font-size:14px">Follow me on X? Extra −10% — code applied automatically →</span><b>ERON10</b></a>
+        <p class="pay">Secure checkout by Stripe: card, Apple Pay or Google Pay. Three packs separately cost $62 and don’t include the $17K playbook. The Full Stack is $49.</p>
       </div>
     </div>
   </div>
@@ -645,7 +646,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
     <span class="eyebrow">Launch price ends in <span class="js-cd">--</span></span>
     <h2>Stop guessing how AI works.<br><i>Know.</i></h2>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-solid" href="#pricing">Get the Full Stack · <s style="opacity:.55;margin:0 4px">$198</s> $49</a>
+      <a class="btn btn-solid" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04" rel="noopener">Get the Full Stack · <s style="opacity:.55;margin:0 4px">$198</s> $49</a>
       <a class="btn btn-ghost" href="#pricing">Or start from $19</a>
     </div>
   </div>
@@ -951,7 +952,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
     ['Why are the tutor prompts locked?', 'They’re part of the product. Each one turns Claude or ChatGPT into a patient tutor for one idea, with checkpoints and a quiz. Lesson 03’s prompt is free on this page so you can try one first.'],
     ['Will you really show how you made $17K?', 'Yes. The playbook in the Full Stack breaks down the whole system behind last month’s income: the content, how the audience grew, what I sell and where the money came from. It’s only in the Full Stack, not in the single packs.'],
     ['Is this a subscription?', 'No. One payment, lifetime access. Future lessons are included.'],
-    ['Can I pay with crypto?', 'Yes. Card, Apple Pay and Google Pay through the checkout, or USDC/USDT. After a crypto payment, send the transaction hash and your access arrives by email.'],
+    ['How do I pay?', 'Secure checkout by Stripe: card, Apple Pay or Google Pay. Follow me on X? Use code ERON10 for an extra 10% off.'],
     ['What if it’s not for me?', 'Email within 30 days for a full refund. No forms, no questions.']
   ], open = 0;
   function renderFaq() {

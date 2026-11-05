@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eron Labs — I made $17K last month with AI. Here’s the system.</title>
+<title>Eron Labs - I made $17K last month with AI. Here’s the system.</title>
 <meta name="description" content="ChatGPT isn't magic. It's math from 1843. 16 short stories about what happens inside AI, plus the system that made me $17K+ last month.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#0A0A0A">
@@ -52,9 +52,9 @@ section{position:relative}
 .grain{position:absolute;inset:0;pointer-events:none;opacity:.08;mix-blend-mode:screen;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 
 /* promo */
-.promo{background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:12.5px;letter-spacing:.03em;border-bottom:1px solid var(--ink)}
-.promo .wrap{display:flex;gap:10px 22px;align-items:center;justify-content:center;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
-.promo .tag{background:var(--ink);color:var(--paper);padding:2px 8px}
+.promo{background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:12px;letter-spacing:.02em;border-bottom:1px solid var(--ink);line-height:1}
+.promo .wrap{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:nowrap;white-space:nowrap;overflow:hidden;padding-top:6px;padding-bottom:6px}
+.promo .tag{background:var(--ink);color:var(--paper);padding:3px 6px}
 
 /* nav */
 .nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--paper);border-bottom:1px solid var(--line-d)}
@@ -367,7 +367,8 @@ footer a{color:var(--paper)}
   .hero-copy>.btns{display:none}
   .hero-copy>.trust{order:6}
   .hero-copy>.stars{order:7}
-  .promo .wrap>span:last-child{display:none}
+  .promo .pcode{display:none}
+  .promo .pfull{display:none}
 }
 @media (max-width:640px){
   .hero{padding-top:24px}
@@ -380,6 +381,15 @@ footer a{color:var(--paper)}
   .pc-pr b{font-size:26px}
   .sk-l>b{display:none}
 }
+.pc-name{font-size:22px;font-weight:600;display:flex;gap:10px;align-items:center}
+.pc-big{display:flex;align-items:baseline;gap:12px}
+.pc-big b{font-family:var(--serif);font-weight:400;font-size:84px;line-height:.9}
+.pc-big s{font-size:22px;color:#8A8A8A}
+.pc-off{font-family:var(--mono);font-size:13px;background:var(--red);color:#fff;padding:3px 8px;border-radius:4px}
+.pc-inc{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;border-top:1px solid #E4E4E4;padding-top:16px}
+.pc-inc li{position:relative;padding-left:28px;font-size:15px;line-height:1.45;color:#2B2B2B}
+.pc-inc li:before{content:"";position:absolute;left:0;top:2px;width:18px;height:18px;border-radius:50%;background:#0A0A0A url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'><path d='M6 12l4 4 8-8'/></svg>") center/12px no-repeat}
+.pc-more{text-align:center;font-size:14px;color:#0A0A0A;text-underline-offset:3px}
 /* reveal */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}
 .rv.in{opacity:1;transform:none}
@@ -417,9 +427,9 @@ footer a{color:var(--paper)}
 
 <div class="promo">
   <div class="wrap">
-    <span class="tag">LAUNCH PRICE · −75%</span>
-    <span>Full Stack + the $17K playbook for <b>$49</b> <s>$198</s> · price rises in <b class="js-cd red-t">--d --h --m --s</b></span>
-    <span>Code <b>ERON10</b> = extra −10% for X followers</span>
+    <span class="tag">-75%</span>
+    <span><span class="pfull">Full Stack <b>$49</b> <s>$198</s> · </span>price rises in <b class="js-cd red-t">--d --h --m --s</b></span>
+    <span class="pcode">Code <b>ERON10</b> -10% for X followers</span>
   </div>
 </div>
 
@@ -435,7 +445,7 @@ footer a{color:var(--paper)}
     </div>
     <div class="cta">
       <span class="price mono" style="font-size:13px">From $19 <s style="color:#8A8A8A">$39</s></span>
-      <a class="btn btn-solid" href="#plans" style="background:#fff;color:#0A0A0A;border-color:#fff">Get access</a>
+      <a class="btn btn-solid" href="#pricing" style="background:#fff;color:#0A0A0A;border-color:#fff">Get access</a>
     </div>
   </div>
 </nav>
@@ -451,7 +461,7 @@ footer a{color:var(--paper)}
       </a>
       <span class="eyebrow">LLM income system · no coding · no PhD</span>
       <h1>I made $17,000 last month with AI. <i>Here’s the exact system.</i></h1>
-      <p class="lead">16 short lessons that take you from “I use ChatGPT” to “I get paid for AI” — plus my full $17K playbook: the content, the clients, the numbers. Start tonight.</p>
+      <p class="lead">16 short lessons that take you from “I use ChatGPT” to “I get paid for AI” - plus my full $17K playbook: the content, the clients, the numbers. Start tonight.</p>
       <div class="btns">
         <a class="btn btn-solid" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04" rel="noopener" style="background:#fff;color:#0A0A0A;border-color:#fff">Get instant access
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -466,12 +476,18 @@ footer a{color:var(--paper)}
     </div>
 
     <div class="plancard" id="plans">
-      <div class="pc-head"><b>Choose your plan</b><span class="pill-red">PRICE RISES IN <span class="js-cd-short">--</span></span></div>
-      <div class="pc-list" id="pcList" role="radiogroup" aria-label="Plans"></div>
-      <a class="pc-cta" id="pcCta" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04" rel="noopener">Unlock everything — $49 →</a>
-      <p class="pc-note" id="pcNote">The 3 packs separately cost $62 and skip the playbook. <b>All of it: $49.</b></p>
-      <a class="pc-promo" id="pcPromo" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04?prefilled_promo_code=ERON10" rel="noopener"><span>Follow me on X? Extra −10%, applied automatically</span><b>ERON10</b></a>
-      <div class="pc-secure"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure checkout by Stripe · Card · Apple Pay · Google Pay</div>
+      <div class="pc-head"><span class="pc-name">Full Stack <span class="pc-badge">BEST VALUE</span></span><span class="pill-red">PRICE RISES IN <span class="js-cd-short">--</span></span></div>
+      <div class="pc-big"><b>$49</b><s>$198</s><span class="pc-off">-75%</span></div>
+      <ul class="pc-inc">
+        <li>All 16 lessons, story to real use</li>
+        <li><b>The $17K playbook:</b> how I made it last month</li>
+        <li>16 one-click notebooks + 16 tutor prompts</li>
+        <li>Lifetime updates and new lessons</li>
+      </ul>
+      <a class="pc-cta" id="pcCta" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04" rel="noopener">Get Full Stack - $49 →</a>
+      <a class="pc-promo" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04?prefilled_promo_code=ERON10" rel="noopener"><span>Follow me on X? Extra -10%, applied automatically</span><b>ERON10</b></a>
+      <div class="pc-secure"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure checkout by Stripe · 30-day refund</div>
+      <a class="pc-more" href="#pricing">Or start with a single pack from $19 ↓</a>
     </div>
   </div>
 
@@ -493,12 +509,12 @@ footer a{color:var(--paper)}
         <span class="eyebrow">What is this · in 30 seconds</span>
         <h2 class="h2">From “I use ChatGPT” to <i>“I get paid for AI.”</i></h2>
       </div>
-      <p class="lead" style="color:#333">People pay for AI skills when you understand how the machine works — not when you collect prompts. Each lesson is one idea in 25 minutes: the story, where it lives inside ChatGPT, and how to use it. No coding, no PhD.</p>
+      <p class="lead" style="color:#333">People pay for AI skills when you understand how the machine works - not when you collect prompts. Each lesson is one idea in 25 minutes: the story, where it lives inside ChatGPT, and how to use it. No coding, no PhD.</p>
     </div>
     <div class="steps">
-      <div class="step rv"><div class="art"><canvas data-art="apple"></canvas></div><div class="body"><span class="n">01 — THE STORY</span><h3>A real person, a real discovery</h3><p>Hamilton carving an equation into a bridge. A 19-year-old beating Hilbert. You remember stories, not formulas.</p></div></div>
-      <div class="step rv"><div class="art"><canvas data-art="quat"></canvas></div><div class="body"><span class="n">02 — INSIDE THE AI</span><h3>Where it lives in ChatGPT</h3><p>Then we open the model and point at the exact spot where that 100-year-old idea is running right now.</p></div></div>
-      <div class="step rv"><div class="art"><canvas data-art="kan"></canvas></div><div class="body"><span class="n">03 — TRY IT</span><h3>See it with your own eyes</h3><p>A one-click notebook and a tutor prompt that turns Claude or ChatGPT into your private teacher for that idea.</p></div></div>
+      <div class="step rv"><div class="art"><canvas data-art="apple"></canvas></div><div class="body"><span class="n">01 - THE STORY</span><h3>A real person, a real discovery</h3><p>Hamilton carving an equation into a bridge. A 19-year-old beating Hilbert. You remember stories, not formulas.</p></div></div>
+      <div class="step rv"><div class="art"><canvas data-art="quat"></canvas></div><div class="body"><span class="n">02 - INSIDE THE AI</span><h3>Where it lives in ChatGPT</h3><p>Then we open the model and point at the exact spot where that 100-year-old idea is running right now.</p></div></div>
+      <div class="step rv"><div class="art"><canvas data-art="kan"></canvas></div><div class="body"><span class="n">03 - TRY IT</span><h3>See it with your own eyes</h3><p>A one-click notebook and a tutor prompt that turns Claude or ChatGPT into your private teacher for that idea.</p></div></div>
     </div>
   </div>
 </section>
@@ -510,7 +526,7 @@ footer a{color:var(--paper)}
     <div style="display:flex;flex-direction:column;gap:14px;max-width:700px">
       <span class="eyebrow">Why this topic</span>
       <h2 class="h2">You probably don’t know this yet. <i>Millions of people can’t stop reading it.</i></h2>
-      <p style="color:#BDBDBD;line-height:1.6;margin:6px 0 0;max-width:620px">This topic pulls millions of views — and a lot of people want exactly the knowledge these guides teach. Every card below is a real thread from my X. Click any of them, then come back for the lesson that goes ten times deeper.</p>
+      <p style="color:#BDBDBD;line-height:1.6;margin:6px 0 0;max-width:620px">This topic pulls millions of views - and a lot of people want exactly the knowledge these guides teach. Every card below is a real thread from my X. Click any of them, then come back for the lesson that goes ten times deeper.</p>
     </div>
     <figure class="proof">
       <img src="data:image/png;base64,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REAERKAggW6T+klIC8JTNxEQARGAgIRUnwMREAERqJGAhLRGgOouAiIgApNVSGeaaaZA3Le9evUquwJeV1ahAhEQgbYnMHr06DIGY8aMScqor9QmadCgnYYJqQtinz59wtA5HjduXNj/888/w9aP4/dWqSyu174IiED7Eph++ulL3nx8PN1004U6Lxs+fHg4HjZsWEmfRhzUXUgRTMTThRPRRBwlkI24fDqnCIhAJQKIqQtq7969rdGiWjchdQHt0aOHjRo1Krw3iWelS6wyERCByU1g1llnNQQVQ1Tr7aXWRUgXW2yx4IEioCNHjpzcjPR6IiACIpCLgAtqvcW0JiGNvdARI0bkeiNqJAIiIAJTmsA888xj48ePD95pPZJThYUUEcUTlRc6pT8Sen0REIEiBNw7HTRoUM2Z/sJCiohOmDBBU/kiV1B9REAEmoIAYtq9e3dDTGuxQkLat29fYwCazteCXn1FQASagYBP82sR06qFFBFledNXX33VDAw0BhEQARGomcCCCy4YvNKi8dKqhXTAgAGKi9Z82XQCERCBZiJQ6xS/KiGVN9pMl15jEQERqCcBpvhDhw4tlHiqWkhnmGEGJZjqefV0LhEQgaYgwJNQPXv2LJR4qkpImdYrNtoU11yDEAERqDMBhBSvtMhyqNxCyrRe3midr5xOJwIi0FQEik7vJaRNdRk1GBEQgSlJoGjSKbeQMq1n3ah+iGRKXma9tgiIQCMJFI2TViWkio828hLq3CIgAs1AgDWlr7/+elVDySWkPFffr18/PclUFVo1FgERaEUCReKkuYRUj4S24sdBYxYBEShCoKFCqox9kUuiPiIgAq1GgITTH3/8UdWPP+f2SCWkrfZx0HhFQASKEGiYkOon84pcDvURARFoRQJFMve5PFKEdOzYsVr61IqfCo1ZBESgKgIS0qpwqbEIiIAIlBOQkJYzUYkIiIAIVEVAQloVLjUWAREQgXICDRNS/epTOWyViIAIdF0C1T7dlCvZJCHtuh8YvTMREIFyAhLSciYqEQEREIGqCEhIq8KlxiIgAiJQTkBCWs5EJSIgAiJQFQEJaVW41LgogV69etnxxx9vK664ot1222129dVXFz2V+olA0xHokkI6cOBAm3HGGQPsl19+2a688sqmA99uA7rppptsgw02SN727rvvbg8//HByrB0RaGUCXVJIf/jhB5tqqqnCdXn//fdtnXXWaeVr1CXG/tlnnxk/7uD2+OOP2y677OKH2opASxOQkLb05WudwV900UW28847JwPecsst7aWXXkqOtSMCrUxAQtrKV6/Fxr799tvbKqusYjfeeKO9+eabLTZ6DVcEsglISLPZqEYEREAEchFoOyFdcskl7ZRTTglwvvzyy5BJXmuttWzXXXcNGWViq/whK7ymp59+OrSbZpppbI899rDNNtvMAPbPP//Yxx9/bPvvv7/98ssvJaC7d+9uJFZ69OhhEydOtG233db4G1ZMa+nfv3//UD5o0CA79thjjdhh2nbccUfbYostQvE999xjt99+u6299tp2xhlnGH/W4Prrr7fTTz+9pNtOO+1k++yzj80111zGs78///yz8ccHGcuDDz5Y0jY+WGCBBezAAw+0ZZdd1uaff/4wti+++MJeeeUVu/vuuyuOj/7V9ou505/x/v333+yW2Oyzz24nnniirb766kamH56jR4+2d999184888zwnko6/H9w1lln2SKLLBKOaPfhhx/a1ltvbVtttVV4b926dbNvvvnGLr30Urv//vsrnSKU8VnYYYcdbIkllgisf//993CtX3jhhbDaYOTIkZl9VdG+BNpOSPfee287++yzwxXnS3HyySfb5ZdfXvETQFu+dM8++6whBGlDCBC4WAwRMb6wbosuuqi9/fbb1rNnTy8q2SK0zz33XEnZvffea6uttlooe+ihh+zFF1+0888/P2lz5513BvGjAOFH9BZaaKGkPr3DygWEHFGIjWTPBRdckCTm4jr2uREcfvjhdsstt5RUFekXc+dkfPAQyNhWXXVV48bhicK4zvePOOKIcHPwY99yU5x55pnD4cEHH2zbbLNNEGOvj7fcmGiTNkSW8EOW/fXXX7buuusaN0GZCMQE2lpI+WLgOWZ9ccePHx9EdP3114+ZleynVwWkhfT7778PXiKd8GSnnnrqkv6IMSIdezqxkD711FO2xhprGF6xWyykDzzwgK288speZYx5zJgxNssss5S8L8TUvVwaL7/88kbmPDb6Ip7xa1GP93vZZZeFpkX7dSakyyyzjD322GMlfBgL/+LrwzGed9qrjIWUGxfj7Mi4AeK1uuHRct7YKn0+YLTpppuGm2PcVvvtTaCthdQvPR7fAQccYP/++29Y28j0OzYEEM/srrvu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HDmSonGcdsbzjx07lho3bkxOfgB09/njjz+oX79+tslq/fr1dP311+uGCyg/d+4cFStWLKDcbsHTTz9NgwYNsttctnv88cdpzpw5jvpwY0YgpQhEDJHecMMN9P333xOm86GQ//77j5o0aUKbN28OxXCWY+TLl4/WrFlDOIZSoKH26tWLFi5caDmsUyLFgA0bNqTff//dcmyjBvi8br75ZqMqbRkTqRYarggjAhFBpNCifvzxR7l2GEosL1y4QNWqVaM9e/aEctiAsQoWLCjjeKGRhktatWpFmIqbSTBEOmvWLOrfv7/ZsIZ1mTJlkrhmzJjRsF5XyESqQ4bLw4mA64kUa4h//vkn5c6dOyw4IlFB8+bNwzK2GnTJkiWSsNW11fHyZU86BCfT/9OnT1OZMmXo/Pnz2uGDIdL9+/dTxYoVtWPqKh544AGaOHGirlpbzkSqhYYrwoiA64l09OjR1KZNG1sQwpoNS3eWLFkk8drVhho1akS//fabrXs4bVSuXDn69ttvLbthvfaVV16hL7/80rt2i+WMhx56iEAueCcrGTZsGI0YMULbLBgixWD4kgFXJwKDUf369Z10kW2ZSB1Dxh1CgICriRTWbWiMVpoZLMNDhgyhX375xQspiOf555+nnj17khWhQuOtW7eut28oTxYvXkzVq1c3HXLevHkEa7VO8C4g2FtvvVXXRJbDvQtLFToJlkhffvll6WWgG9eofMeOHUEtxTCRGqHJZeFGwNVE+s0331DlypVNMXzvvffotdde07a56667pBVYR6aHDh2iyZMn09tvv60dIyUVW7dulf6hujGsyE/1y549O23atIly5sypigKOVlb2YIkUP1TwcrArZcuWpdWrV9ttnqwdE2kyOPgilRBwLZHCsf6ff/4x1Ua/+uor6tixoyXUIMkuXbp42x09epSgKWIajHuEU7DGqCNx3Pe5556j8ePH23oEaN1PPPGEti3WVhGYoBMzIsXaqm75AEY5J25T8PHt2rWr4WPAy8AMDyZSQ9i4MMwIuJZI4+Li6Mknn9TCh//4cC5PSkrStlEVcJlasWKFXAcFeaamy5PVvaDp2XVax7QdhiudpIRIYazCEgo0XyNp27YtLV++3KgqoCwhIUHrf4pIMzNSZiINgJMLUgEB1xLpr7/+SsWLF9dCOHXqVLkuqm2QDiqg4cH530wQHor1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" alt="X Analytics: 6.8M impressions, up 1K%" width="338" height="160">
@@ -553,7 +569,7 @@ footer a{color:var(--paper)}
       <div class="side">
         <div class="art"><canvas data-art="resid"></canvas></div>
         <div><span class="k">01 · THE STORY</span><p>In 2015, bigger neural networks were getting <i>dumber</i> than small ones. Nobody could explain it. The fix was one line: add the input back to the output. That paper became one of the most cited of the century.</p></div>
-        <div><span class="k">02 · INSIDE CHATGPT</span><p>Every layer of ChatGPT reads from and writes to one shared “notebook” — the residual stream. Once you see it, AI research stops sounding like magic.</p></div>
+        <div><span class="k">02 · INSIDE CHATGPT</span><p>Every layer of ChatGPT reads from and writes to one shared “notebook” - the residual stream. Once you see it, AI research stops sounding like magic.</p></div>
       </div>
       <div class="side">
         <div><span class="k">03 · TRY IT YOURSELF</span>
@@ -576,11 +592,11 @@ footer a{color:var(--paper)}
     <div class="rv">
       <span class="eyebrow">Try one lesson free</span>
       <h2 class="h2" style="margin-top:14px">Why a 100-dimensional ball is <i>basically empty.</i></h2>
-      <p class="lead" style="margin-top:20px;color:#333">Its volume is 0.000…(40 zeros)…237. And every word ChatGPT reads lives in a space just like that. This is Lesson 03 — paste the prompt into any AI and it will teach you why.</p>
+      <p class="lead" style="margin-top:20px;color:#333">Its volume is 0.000…(40 zeros)…237. And every word ChatGPT reads lives in a space just like that. This is Lesson 03 - paste the prompt into any AI and it will teach you why.</p>
       <div class="mini-steps">
         <div><b>01</b><span>Copy the prompt</span></div>
         <div><b>02</b><span>Paste it into Claude, ChatGPT or Gemini (free plans work)</span></div>
-        <div><b>03</b><span>Answer its questions — it quizzes you at the end</span></div>
+        <div><b>03</b><span>Answer its questions - it quizzes you at the end</span></div>
       </div>
     </div>
     <div class="rv">
@@ -594,7 +610,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
 1. Ask me to guess the volume of a ball in 2, 3, 10 and 100 dimensions.
 2. Show the formula V(n) = π^(n/2) / Γ(n/2 + 1) and compute it for those n.
 3. Explain why almost all the volume sits in a thin shell near the surface, and why random directions become nearly perpendicular.
-4. Connect this to how ChatGPT compares words (cosine similarity in 768–12,288 dimensions).
+4. Connect this to how ChatGPT compares words (cosine similarity in 768-12,288 dimensions).
 5. Give me a 6-line Python experiment that proves it, then quiz me with 3 questions.</pre>
       </div>
       <div class="of16"><span class="serif" style="font-size:32px">That was 1 of 16. <i style="color:var(--mute)">15 to go.</i></span><a class="btn btn-solid" href="#pricing">Unlock all 16 →</a></div>
@@ -629,7 +645,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
         <span class="eyebrow">Inside the course</span>
         <h2 class="h2">16 lessons. 3 packs. <i>16 “aha” moments.</i></h2>
       </div>
-      <p style="max-width:340px;color:#BDBDBD;margin:0;line-height:1.6">Most lessons started as a free thread — click to read it first. Two were never posted anywhere.</p>
+      <p style="max-width:340px;color:#BDBDBD;margin:0;line-height:1.6">Most lessons started as a free thread - click to read it first. Two were never posted anywhere.</p>
     </div>
     <div class="packs" id="packs"></div>
   </div>
@@ -643,7 +659,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
       <div style="display:flex;flex-direction:column;gap:18px">
         <span class="eyebrow">The part nobody shows you</span>
         <h2 class="h2" style="font-size:clamp(36px,4vw,56px)">This knowledge made me $17,000+ in one month. <i>The guides show exactly how.</i></h2>
-        <p class="lead" style="color:#333">Understanding how AI works isn’t just interesting — it pays. 200+ clients have already gone through my guides. The Full Stack includes my playbook: the full system behind last month’s $17K, step by step.</p>
+        <p class="lead" style="color:#333">Understanding how AI works isn’t just interesting - it pays. 200+ clients have already gone through my guides. The Full Stack includes my playbook: the full system behind last month’s $17K, step by step.</p>
       </div>
     </div>
     <div class="playbook rv">
@@ -657,9 +673,9 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
       <div class="pb-proof">[ADD YOUR PAYOUT / STRIPE SCREENSHOT HERE]</div>
     </div>
     <div class="reviews">
-      <div class="review rv"><span class="stars">★★★★★ · [REAL STORY 1]</span><span style="line-height:1.6">“[Who they are, what they built or landed, what changed]”</span><span style="font-size:13px;color:var(--mute)">— [@handle]</span></div>
-      <div class="review rv"><span class="stars">★★★★★ · [REAL STORY 2]</span><span style="line-height:1.6">“[Who they are, what they built or landed, what changed]”</span><span style="font-size:13px;color:var(--mute)">— [@handle]</span></div>
-      <div class="review rv"><span class="stars">★★★★★ · [REAL STORY 3]</span><span style="line-height:1.6">“[Who they are, what they built or landed, what changed]”</span><span style="font-size:13px;color:var(--mute)">— [@handle]</span></div>
+      <div class="review rv"><span class="stars">★★★★★ · [REAL STORY 1]</span><span style="line-height:1.6">“[Who they are, what they built or landed, what changed]”</span><span style="font-size:13px;color:var(--mute)">- [@handle]</span></div>
+      <div class="review rv"><span class="stars">★★★★★ · [REAL STORY 2]</span><span style="line-height:1.6">“[Who they are, what they built or landed, what changed]”</span><span style="font-size:13px;color:var(--mute)">- [@handle]</span></div>
+      <div class="review rv"><span class="stars">★★★★★ · [REAL STORY 3]</span><span style="line-height:1.6">“[Who they are, what they built or landed, what changed]”</span><span style="font-size:13px;color:var(--mute)">- [@handle]</span></div>
     </div>
   </div>
 </section>
@@ -683,18 +699,18 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
     <div class="plans">
       <div class="hero-plan rv">
         <span class="best">BEST VALUE</span>
-        <div style="display:flex;flex-direction:column;gap:6px"><span class="eyebrow" style="color:var(--mute)">Everything</span><b style="font-size:26px">Full Stack — 16 lessons + $17K playbook</b></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span class="eyebrow" style="color:var(--mute)">Everything</span><b style="font-size:26px">Full Stack - 16 lessons + $17K playbook</b></div>
         <div class="pr"><b>$49</b><s>$198</s><span class="off">−75%</span></div>
         <div class="vs">
           <div><span>16 lessons: story → inside the AI → try it</span><span>$89</span></div>
           <div><span>16 one-click Python notebooks</span><span>$29</span></div>
           <div><span>16 tutor prompts for Claude / ChatGPT</span><span>$19</span></div>
-          <div><span><b>Bonus: the $17K playbook</b> — how I made it last month</span><span>$49</span></div>
+          <div><span><b>Bonus: the $17K playbook</b> - how I made it last month</span><span>$49</span></div>
           <div><span>Bonus: “16 equations inside every AI” poster</span><span>$12</span></div>
           <div><span>Lifetime updates &amp; new lessons</span><span>free</span></div>
           <div class="tot"><span>Total value</span><span><s>$198</s> → $49</span></div>
         </div>
-        <a class="btn btn-solid" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04" rel="noopener">Get the Full Stack — $49 →</a>
+        <a class="btn btn-solid" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04" rel="noopener">Get the Full Stack - $49 →</a>
         <span style="font-size:13.5px;color:var(--mute);text-align:center">One-time payment · instant access · 30-day refund</span>
       </div>
       <div class="side-plans rv">
@@ -702,7 +718,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
         <a class="splan" href="https://buy.stripe.com/5kQ3coh1h4AyfqgaX67AI05" rel="noopener"><div><b>Pack 01 · How AI sees words</b><p>5 lessons + notebooks + prompts</p></div><div class="p"><b>$19</b><s>$39</s></div></a>
         <a class="splan" href="https://buy.stripe.com/6oU00c4ev5ECce4ghq7AI06" rel="noopener"><div><b>Pack 02 · How ChatGPT thinks</b><p>6 lessons + notebooks + prompts</p></div><div class="p"><b>$24</b><s>$49</s></div></a>
         <a class="splan" href="https://buy.stripe.com/aFabIU7qH1omba03uE7AI07" rel="noopener"><div><b>Pack 03 · How AI is built &amp; read</b><p>5 lessons + notebooks + prompts</p></div><div class="p"><b>$19</b><s>$39</s></div></a>
-        <a class="codebox" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04?prefilled_promo_code=ERON10" rel="noopener" style="text-decoration:none"><span style="color:var(--mute-d);font-size:14px">Follow me on X? Extra −10% — code applied automatically →</span><b>ERON10</b></a>
+        <a class="codebox" href="https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04?prefilled_promo_code=ERON10" rel="noopener" style="text-decoration:none"><span style="color:var(--mute-d);font-size:14px">Follow me on X? Extra −10% - code applied automatically →</span><b>ERON10</b></a>
         <p class="pay">Secure checkout by Stripe: card, Apple Pay or Google Pay. Three packs separately cost $62 and don’t include the $17K playbook. The Full Stack is $49.</p>
       </div>
     </div>
@@ -749,7 +765,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
 <div class="sticky" id="sticky" aria-hidden="true">
   <div class="wrap">
     <div class="sk-l"><b>Full Stack + $17K playbook</b><span><b class="sk-p">$49</b> <s>$198</s> · price rises in <span class="js-cd red-t">--</span></span></div>
-    <a class="sk-btn" href="#plans">Get access →</a>
+    <a class="sk-btn" href="#pricing">Get access →</a>
   </div>
 </div>
 <div class="dark wordmark" aria-hidden="true">ERON LABS</div>
@@ -770,18 +786,18 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
 
   /* ---------- posts (real text & stats from @0xEronn) ---------- */
   var POSTS = [
-    { id: '2110839724311032275', d: 'Oct 15', art: 'apple', article: true, t: 'The forgotten physics inside LLMs — from Newton’s apple to 100 million users', r: '17', rt: '57', l: '214', v: '327K' },
-    { id: '2116551360753676457', d: 'Oct 31', art: 'warp', t: 'A month ago, Springer Nature published a 400-formula book that may have quietly solved quantum gravity — no strings, no extra dimensions, no new particles.', r: '89', rt: '366', l: '1.6K', v: '200K' },
+    { id: '2110839724311032275', d: 'Oct 15', art: 'apple', article: true, t: 'The forgotten physics inside LLMs - from Newton’s apple to 100 million users', r: '17', rt: '57', l: '214', v: '327K' },
+    { id: '2116551360753676457', d: 'Oct 31', art: 'warp', t: 'A month ago, Springer Nature published a 400-formula book that may have quietly solved quantum gravity - no strings, no extra dimensions, no new particles.', r: '89', rt: '366', l: '1.6K', v: '200K' },
     { id: '2116289136009330835', d: 'Oct 30', art: 'pid', t: 'Google’s first rule for machine learning: don’t use machine learning. A 3-line PID equation beats a neural network at balancing a robot.', r: '10', rt: '94', l: '1.3K', v: '52K' },
-    { id: '2115824959624827177', d: 'Oct 29', art: 'zeta', t: 'In 1859, Riemann wrote one sentence about where a function equals zero. 10 trillion cases checked, not a single counterexample — and it’s still unproven. Worth $1 million.', r: '8', rt: '56', l: '435', v: '31K' },
+    { id: '2115824959624827177', d: 'Oct 29', art: 'zeta', t: 'In 1859, Riemann wrote one sentence about where a function equals zero. 10 trillion cases checked, not a single counterexample - and it’s still unproven. Worth $1 million.', r: '8', rt: '56', l: '435', v: '31K' },
     { id: '2117377211280064736', d: 'Nov 2', art: 'hopf', t: 'Heinz Hopf discovered this in 1931. Roger Penrose called it “an element of the architecture of our world.” It shows up in at least 8 areas of physics.', r: '29', rt: '173', l: '729', v: '27K' },
     { id: '2114645012331769886', d: 'Oct 26', art: 'lorenz', t: 'In 1963, Edward Lorenz reduced the entire atmosphere to three numbers and one tiny equation. Then he watched two nearly identical starting points split apart.', r: '4', rt: '47', l: '237', v: '14K' },
     { id: '2118156334457557491', d: 'Nov 4', art: 'quat', t: 'In 1843, Hamilton realized complex numbers needed not one more dimension but two. He carved the equation into a Dublin bridge on October 16th.', r: '9', rt: '54', l: '240', v: '13K' },
     { id: '2116154054363447411', d: 'Oct 30', art: 'kan', t: 'In 1957, a 19-year-old Vladimir Arnold disproved a conjecture Hilbert set for the entire 20th century.', r: '1', rt: '31', l: '202', v: '9.2K' },
-    { id: '2117217274377466326', d: 'Nov 2', art: 'resid', t: 'In 2015, a 74-layer neural network scored worse than an 8-layer one. One line of code fixed it — add input to output every two layers.', r: '2', rt: '16', l: '104', v: '6.6K' },
+    { id: '2117217274377466326', d: 'Nov 2', art: 'resid', t: 'In 2015, a 74-layer neural network scored worse than an 8-layer one. One line of code fixed it - add input to output every two layers.', r: '2', rt: '16', l: '104', v: '6.6K' },
     { id: '2116861102977900570', d: 'Nov 1', art: 'neuron', t: 'Delete one neuron from a neural network and it forgets the number 2. Delete another and nothing changes.', r: '5', rt: '15', l: '102', v: '5.1K' },
-    { id: '2110695011826196717', d: 'Oct 15', art: 'sphere', t: 'A sphere in 100 dimensions has a volume of 2.37 × 10⁻⁴⁰. Not small — effectively zero. Every LLM embedding space lives in thousands of dimensions.', r: '6', rt: '10', l: '61', v: '3.3K' },
-    { id: '2114305046506537167', d: 'Oct 25', art: 'gpu', t: 'Meta trained Llama 3 405B on 16,384 GPUs simultaneously — and a single GPU can’t even hold 1% of the model’s memory.', r: '3', rt: '7', l: '34', v: '2K' }
+    { id: '2110695011826196717', d: 'Oct 15', art: 'sphere', t: 'A sphere in 100 dimensions has a volume of 2.37 × 10⁻⁴⁰. Not small - effectively zero. Every LLM embedding space lives in thousands of dimensions.', r: '6', rt: '10', l: '61', v: '3.3K' },
+    { id: '2114305046506537167', d: 'Oct 25', art: 'gpu', t: 'Meta trained Llama 3 405B on 16,384 GPUs simultaneously - and a single GPU can’t even hold 1% of the model’s memory.', r: '3', rt: '7', l: '34', v: '2K' }
   ];
 
   var IC = {
@@ -966,7 +982,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
 
   /* ---------- teasers ---------- */
   var TEASE = [
-    ['Why a sphere in 100 dimensions is basically empty — and why that makes AI search work', 'Lesson 03', '2110695011826196717'],
+    ['Why a sphere in 100 dimensions is basically empty - and why that makes AI search work', 'Lesson 03', '2110695011826196717'],
     ['The one line of code from 2015 that made modern AI possible', 'Lesson 06', '2117217274377466326'],
     ['How deleting a single neuron makes an AI forget the number 2', 'Lesson 16', '2116861102977900570'],
     ['Why Google’s first rule of machine learning is “don’t use machine learning”', 'Lesson 15', '2116289136009330835'],
@@ -1044,7 +1060,7 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
   var FAQ = [
     ['I’m not technical at all. Is this for me?', 'Yes. Every lesson starts with a story, not a formula. If you can follow a good podcast or a long thread on X, you can follow this course. The math is there when you want it, never in the way.'],
     ['Do I need to know advanced math?', 'No. High-school algebra is plenty. Each lesson builds the idea step by step, with pictures and code you can run.'],
-    ['Do I need to code?', 'No. The notebooks open in Google Colab with one click. Read them, run them, or skip them — the lessons work without them.'],
+    ['Do I need to code?', 'No. The notebooks open in Google Colab with one click. Read them, run them, or skip them - the lessons work without them.'],
     ['What exactly do I get, and how fast?', 'Instant access by email: 16 lessons on the web, 16 one-click notebooks, 16 tutor prompts and the PDF poster. Everything downloads, so it’s yours offline too.'],
     ['Why are the tutor prompts locked?', 'They’re part of the product. Each one turns Claude or ChatGPT into a patient tutor for one idea, with checkpoints and a quiz. Lesson 03’s prompt is free on this page so you can try one first.'],
     ['Will you really show how you made $17K?', 'Yes. The playbook in the Full Stack breaks down the whole system behind last month’s income: the content, how the audience grew, what I sell and where the money came from. It’s only in the Full Stack, not in the single packs.'],
@@ -1060,27 +1076,6 @@ Teach me in 5 short steps. Stop after each step and wait for my answer.
   $('faqList').addEventListener('click', function (e) { var b = e.target.closest('button[data-f]'); if (!b) return; var i = +b.dataset.f; open = open === i ? -1 : i; renderFaq(); });
   renderFaq();
 
-
-  /* ---------- hero plan picker ---------- */
-  var PLANS = [
-    { id: 'full', name: 'Full Stack', badge: 'BEST VALUE', d: 'All 16 lessons + the $17K playbook, notebooks, prompts, updates', p: 49, w: 198, url: 'https://buy.stripe.com/00wbIUdP58QO7XOc1a7AI04', cta: 'Unlock everything — $49 →' },
-    { id: 'p1', name: 'Pack 01 · How AI sees words', d: '5 lessons + notebooks + prompts', p: 19, w: 39, url: 'https://buy.stripe.com/5kQ3coh1h4AyfqgaX67AI05', cta: 'Get Pack 01 — $19 →' },
-    { id: 'p2', name: 'Pack 02 · How ChatGPT thinks', d: '6 lessons + notebooks + prompts', p: 24, w: 49, url: 'https://buy.stripe.com/6oU00c4ev5ECce4ghq7AI06', cta: 'Get Pack 02 — $24 →' },
-    { id: 'p3', name: 'Pack 03 · How AI is built & read', d: '5 lessons + notebooks + prompts', p: 19, w: 39, url: 'https://buy.stripe.com/aFabIU7qH1omba03uE7AI07', cta: 'Get Pack 03 — $19 →' }
-  ], pick = 'full';
-  function renderPlans() {
-    $('pcList').innerHTML = PLANS.map(function (pl) {
-      var on = pl.id === pick;
-      return '<button type="button" class="pc-opt" role="radio" aria-checked="' + on + '" data-plan="' + pl.id + '"><span class="pc-dot"></span><span class="pc-txt"><b>' + esc(pl.name) + (pl.badge ? ' <span class="pc-badge">' + pl.badge + '</span>' : '') + '</b><small>' + esc(pl.d) + '</small></span><span class="pc-pr"><b>$' + pl.p + '</b><s>$' + pl.w + '</s></span></button>';
-    }).join('');
-    var cur = PLANS.filter(function (pl) { return pl.id === pick; })[0];
-    $('pcCta').href = cur.url; $('pcCta').textContent = cur.cta;
-    $('pcPromo').href = cur.url + '?prefilled_promo_code=ERON10';
-    $('pcNote').innerHTML = pick === 'full' ? 'The 3 packs separately cost $62 and skip the playbook. <b>All of it: $49.</b>' : 'Only $' + (49 - cur.p) + ' more gets you <b>all 16 lessons + the $17K playbook.</b> <a href="#" data-up="1" style="color:#0A0A0A">Switch to Full Stack</a>';
-  }
-  $('pcList').addEventListener('click', function (e) { var b = e.target.closest('[data-plan]'); if (!b) return; pick = b.dataset.plan; renderPlans(); });
-  $('pcNote').addEventListener('click', function (e) { if (e.target.closest('[data-up]')) { e.preventDefault(); pick = 'full'; renderPlans(); } });
-  renderPlans();
 
   /* ---------- sticky buy bar ---------- */
   var sticky = $('sticky'), plansEl = $('plans'), pricingEl = $('pricing');

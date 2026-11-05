@@ -8,7 +8,7 @@ Landing page for the Eron Labs course. Plain static site: one `index.html`, no b
 3. **Deploy**, then **Settings → Domains** → add your domain and set the DNS records Vercel shows.
 
 ## Before launch
-- In `index.html`, replace `/og.png` in the `og:image` and `twitter:image` tags with the full URL (`https://YOURDOMAIN/og.png`) so link previews work on X.
+- Domain: https://www.eronlabs.org (eronlabs.org redirects to www). Link previews use https://www.eronlabs.org/og.png.
 - Stripe Payment Links are wired (Full Stack, Pack 01–03). Promo code `ERON10` is prefilled from the code box. After payment, Stripe redirects to `/thanks` (`thanks.html`).
 - Replace `[YOUR SUPPORT EMAIL]` in `index.html` (footer) and `thanks.html`.
 - Replace the `[REAL STORY]` review cards and the `[ADD YOUR PAYOUT / STRIPE SCREENSHOT HERE]` box.
